@@ -6,7 +6,15 @@
     <title>Andrew Pollett - Personal Homepage</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        /* Custom font stack to mimic the classic academic look */
+	/* Colour theme */
+	:root {
+		--textColour: #333;
+		--darkText: #1F2937;
+		--lightAccent: #44ef90;
+		--darkAccent: #1cb946;
+	}
+
+	/* Custom font stack to mimic the classic academic look */
         body {
             font-family: 'Times New Roman', Times, serif;
             color: #333;
@@ -22,12 +30,12 @@
         }
         /* Academic link style (like the Changhai site) */
         .academic-link {
-            color: #B91C1C; /* A deep red for links */
+	    color: var(--darkAccent); /* A darker colour for links */
             text-decoration: none;
             transition: color 0.2s;
         }
         .academic-link:hover {
-            color: #EF4444; /* Brighter red on hover */
+            color: var(--lightAccent); /* Brighter colour on hover */
             text-decoration: underline;
         }
         /* Fixed-width container for desktop view */
@@ -61,7 +69,7 @@
             top: 0.3rem;
             width: 8px;
             height: 8px;
-            background: #B91C1C; /* Red dot */
+            background: var(--darkAccent); /* Red dot */
             border-radius: 50%;
             z-index: 10;
         }
