@@ -155,7 +155,12 @@
                 </div>
             </aside>
 
-            <!-- Main Content Area (Right Column) - Dynamically Switched Content -->
+
+
+            <!-- Main Content Area -->
+
+
+
             <main class="flex-1 space-y-8 bg-white p-6 md:p-8 shadow-xl rounded-xl border border-gray-200">
 
                 <!-- 1. About Me Section (Default Visible) -->
@@ -216,8 +221,11 @@
 
 
                 <!-- 2. Research Section -->
+
+
+
                 <section id="research" class="page-content">
-                    <!-- <h2 class="text-2xl section-heading">2. Research Interests</h2> -->             
+                    <h2 class="text-2xl section-heading">Research Interests</h2>         
                     <div class="space-y-12">
                 
 		<!-- Distributed storage systems -->
@@ -273,11 +281,13 @@
 
 
                 <!-- 3. Awards Section -->
+
+
+
                 <section id="awards" class="page-content">
-                    <!-- <h2 class="text-2xl section-heading">2. Research Interests</h2> -->             
+                    <h2 class="text-2xl section-heading">Awards and Accomplishments</h2>          
                     <div class="space-y-12">
 
-                <h3 class="text-xl font-bold mt-6 mb-4 text-green-700 border-b border-gray-200 pb-2">Work Experience</h3>
                     <div class="space-y-4 relative">
                         <!-- Awards -->
                         <div class="timeline-item">
@@ -339,10 +349,10 @@
                 });
 
                 // Scroll to the top of the main content area for a "new page" feel
-                const mainContent = document.querySelector('main');
-                if (mainContent) {
-                    mainContent.scrollIntoView({ behavior: 'smooth' });
-                }
+                // const mainContent = document.querySelector('main');
+                // if (mainContent) {
+                //     mainContent.scrollIntoView({ behavior: 'smooth' });
+                // }
             };
 
             // Event listeners for navigation links
