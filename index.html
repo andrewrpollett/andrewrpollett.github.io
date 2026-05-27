@@ -345,6 +345,7 @@
     <!-- JavaScript for SPA Simulation -->
     <script>
         document.addEventListener('DOMContentLoaded', () => {
+            window.scrollTo(0, 0);
             const navLinks = document.querySelectorAll('.nav-link');
             const contentSections = document.querySelectorAll('.page-content');
             
@@ -399,14 +400,17 @@
                 }
             });
 
-            // Handle initial load (check for hash in URL)
-            const initialHash = window.location.hash.substring(1);
-            if (initialHash && document.getElementById(initialHash)) {
-                showContent(initialHash);
-            } else {
-                // Default to 'about' if no hash is present
-                showContent('about');
-            }
+            // // Handle initial load (check for hash in URL)
+            // const initialHash = window.location.hash.substring(1);
+            // if (initialHash && document.getElementById(initialHash)) {
+            //     showContent(initialHash);
+            // } else {
+            //     // Default to 'about' if no hash is present
+            //     showContent('about');
+            // }
+            // Always start at top and show About
+            window.history.replaceState(null, null, ' ');
+            showContent('about');
         });
     </script>
 
