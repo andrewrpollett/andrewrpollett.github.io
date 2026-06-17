@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Andrew Pollett - Personal Homepage</title>
 <script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/feather-icons"></script>
 
 <style>
 :root {
@@ -131,8 +132,17 @@ h1, h2, h3 {
 <img src="images/profile.png" class="w-40 mx-auto rounded-lg mb-4 border shadow">
 
 <div class="text-sm space-y-2">
-<p><strong>Email:</strong> <a class="academic-link">arpollett@mun.ca</a></p>
-<p><strong>GitHub:</strong> <a href="https://github.com/andrewrpollett" class="academic-link">andrewrpollett</a></p>
+
+<div class="flex items-center gap-2">
+<i data-feather="mail" class="w-4 h-4 text-gray-500"></i>
+<a class="academic-link">arpollett@mun.ca</a>
+</div>
+
+<div class="flex items-center gap-2">
+<i data-feather="github" class="w-4 h-4 text-gray-500"></i>
+<a href="https://github.com/andrewrpollett" class="academic-link">andrewrpollett</a>
+</div>
+
 </div>
 
 <p class="text-xs text-center text-gray-400 mt-4">© 2026 Andrew Pollett</p>
@@ -298,6 +308,10 @@ e.preventDefault();
 show(link.dataset.target);
 };
 });
+</script>
+
+<script>
+feather.replace();
 </script>
 
 </body>
